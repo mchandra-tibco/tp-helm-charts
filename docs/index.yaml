@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  tp-tibtunnel:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2025-03-17T20:04:10.167196877-04:00"
+    description: A Helm chart for TIBCO Tibtunnel
+    digest: 60a930cd194133b9b7177ccedc22d70dd93a4f8ea03d99d8ccefd729132ee81a
+    keywords:
+    - tibtunnel
+    - data-plane
+    - hybrid-connectivity
+    name: tp-tibtunnel
+    urls:
+    - https://mchandra-tibco.github.io/tp-helm-charts/tp-tibtunnel-1.1.4.tgz
+    version: 1.1.4
+generated: "2025-03-17T20:04:10.146352212-04:00"
