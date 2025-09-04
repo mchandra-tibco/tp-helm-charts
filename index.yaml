@@ -58,6 +58,20 @@ entries:
   bw5provisioner:
   - apiVersion: v2
     appVersion: 1.10.0
+    created: "2025-09-04T03:00:40.729804856Z"
+    description: TIBCO Platform Dataplane Capabilty -- BW5 Provisioner
+    digest: 00c2083d756c14a9554569459a18ef04b2239ac5ff5c21d2a9b3efb613d89f85
+    home: https://github.com/tibco/tp-iapp-bw5-provisioner.git
+    icon: https://pbs.twimg.com/profile_images/1064638558110007296/K6HqaXwh_400x400.jpg
+    maintainers:
+    - email: compute-dev@tibco.com
+      name: TIBCO Platform Dev Team
+    name: bw5provisioner
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/bw5provisioner-1.10.2/bw5provisioner-1.10.2.tgz
+    version: 1.10.2
+  - apiVersion: v2
+    appVersion: 1.10.0
     created: "2025-08-22T10:41:14.973413489Z"
     description: TIBCO Platform Dataplane Capabilty -- BW5 Provisioner
     digest: 3993750224c376244b10d11ff8f6c1e51f7e0a3402f906536ea44260268dc5c5
@@ -71,6 +85,20 @@ entries:
     - https://github.com/TIBCOSoftware/tp-helm-charts/releases/download/bw5provisioner-1.10.1/bw5provisioner-1.10.1.tgz
     version: 1.10.1
   bwprovisioner:
+  - apiVersion: v2
+    appVersion: 1.10.0
+    created: "2025-09-04T03:00:40.886427255Z"
+    description: TIBCO Platform Dataplane Capabilty -- BW Provisioner
+    digest: d40d0b274710d5af5487b26c9ee5417e954d2dd2927e62c616b44ce155fd045f
+    home: https://github.com/tibco/tp-iapp-bw-provisioner.git
+    icon: https://pbs.twimg.com/profile_images/1064638558110007296/K6HqaXwh_400x400.jpg
+    maintainers:
+    - email: compute-dev@tibco.com
+      name: TIBCO Platform Dev Team
+    name: bwprovisioner
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/bwprovisioner-1.10.2/bwprovisioner-1.10.2.tgz
+    version: 1.10.2
   - apiVersion: v2
     appVersion: 1.10.0
     created: "2025-08-22T10:41:15.203609884Z"
@@ -313,6 +341,16 @@ entries:
   dp-bw5ce-app:
   - apiVersion: v2
     appVersion: 1.10.0
+    created: "2025-09-04T03:00:41.201949481Z"
+    description: A Helm chart for BW5 Containers application
+    digest: 6caa35766d63a4407757997760805c7238a432790a396e08d635845ad42ba08e
+    name: dp-bw5ce-app
+    type: application
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/dp-bw5ce-app-1.10.3/dp-bw5ce-app-1.10.3.tgz
+    version: 1.10.3
+  - apiVersion: v2
+    appVersion: 1.10.0
     created: "2025-08-22T10:41:15.448259654Z"
     description: A Helm chart for BW5 Containers application
     digest: bd9c60240627ea96489b600075043f869326f70ab1b4b64fb9b41f0e194fcb91
@@ -322,6 +360,16 @@ entries:
     - https://github.com/TIBCOSoftware/tp-helm-charts/releases/download/dp-bw5ce-app-1.10.2/dp-bw5ce-app-1.10.2.tgz
     version: 1.10.2
   dp-bwce-app:
+  - apiVersion: v2
+    appVersion: 1.10.0
+    created: "2025-09-04T03:00:41.335887706Z"
+    description: A Helm chart for BWCE application
+    digest: e0d53d2303bfff1f3d125106866fc7d2210fd47c1a3c7de8ccdde9172d73ca0a
+    name: dp-bwce-app
+    type: application
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/dp-bwce-app-1.10.2/dp-bwce-app-1.10.2.tgz
+    version: 1.10.2
   - apiVersion: v2
     appVersion: 1.10.0
     created: "2025-08-22T10:41:15.670898767Z"
@@ -1276,6 +1324,16 @@ entries:
   dp-flogo-app:
   - apiVersion: v2
     appVersion: 1.9.0
+    created: "2025-09-04T03:00:42.537749412Z"
+    description: Helm chart for Flogo application
+    digest: fb108800f9228c104145d5ac38ba0bf0cda1f0018eed17a2e891dc5f40769306
+    name: dp-flogo-app
+    type: application
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/dp-flogo-app-1.9.3/dp-flogo-app-1.9.3.tgz
+    version: 1.9.3
+  - apiVersion: v2
+    appVersion: 1.9.0
     created: "2025-07-25T08:17:40.882399253Z"
     description: Helm chart for Flogo application
     digest: 703352c6114a31e5a23995fb1cf7370dcc6303e7f06b9970276e00fb54e3bd3c
@@ -1455,6 +1513,20 @@ entries:
     - https://github.com/TIBCOSoftware/tp-helm-charts/releases/download/dp-oauth2proxy-recipes-1.3.19/dp-oauth2proxy-recipes-1.3.19.tgz
     version: 1.3.19
   flogoprovisioner:
+  - apiVersion: v2
+    appVersion: 1.10.0
+    created: "2025-09-04T03:00:42.707973118Z"
+    description: TIBCO Platform Dataplane Capabilty -- Flogo Provisioner
+    digest: 877e234228e4d3919b9deacef05d98afb9eff7dbe21cce6e09b22a65cf88354f
+    home: https://github.com/tibco/tp-iapp-flogo-provisioner.git
+    icon: https://pbs.twimg.com/profile_images/1064638558110007296/K6HqaXwh_400x400.jpg
+    maintainers:
+    - email: compute-dev@tibco.com
+      name: TIBCO Platform Dev Team
+    name: flogoprovisioner
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/flogoprovisioner-1.10.2/flogoprovisioner-1.10.2.tgz
+    version: 1.10.2
   - apiVersion: v2
     appVersion: 1.10.0
     created: "2025-08-22T10:41:16.080927956Z"
@@ -2316,6 +2388,46 @@ entries:
     - https://github.com/TIBCOSoftware/tp-helm-charts/releases/download/o11yservice-1.3.31/o11yservice-1.3.31.tgz
     version: 1.3.31
   oauth2-proxy:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: securityContext and timeout of the initContainer wait-for-redis configurable via values.
+          links:
+            - name: Github PR
+              url: https://github.com/oauth2-proxy/manifests/pull/159
+    apiVersion: v2
+    appVersion: 1.10.0
+    created: "2025-09-04T03:00:43.63443238Z"
+    description: A reverse proxy that provides authentication with Google, Github
+      or other providers
+    digest: 40da1a39bbd82042326e908e25c8c32c711ee29603e4d6f9b7e996fa67b509f6
+    home: https://oauth2-proxy.github.io/oauth2-proxy/
+    keywords:
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    - redis
+    kubeVersion: '>=1.9.0-0'
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - name: tlawrie
+    - email: nicholas.meves@gmail.com
+      name: NickMeves
+    - email: joel.speed@hotmail.co.uk
+      name: JoelSpeed
+    - email: pierluigi.lenoci@gmail.com
+      name: pierluigilenoci
+    name: oauth2-proxy
+    sources:
+    - https://github.com/oauth2-proxy/oauth2-proxy
+    - https://github.com/oauth2-proxy/manifests
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/oauth2-proxy-10.2.19/oauth2-proxy-10.2.19.tgz
+    version: 10.2.19
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -4665,6 +4777,26 @@ entries:
     - https://github.com/TIBCOSoftware/tp-helm-charts/releases/download/platform-cp-messaging-1.10.8/platform-cp-messaging-1.10.8.tgz
     version: 1.10.8
   tibco-developer-hub:
+  - apiVersion: v2
+    appVersion: 1.10.0
+    created: "2025-09-04T03:00:44.800597866Z"
+    dependencies:
+    - name: common
+      repository: ""
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 11.x.x
+    description: A Helm chart for TIBCO® Developer Hub
+    digest: fe8bde03fc2f6a09fba28251a7b8d448b3eec53c1419f17efe4569cab1a8a5b5
+    name: tibco-developer-hub
+    type: application
+    urls:
+    - https://github.com/mchandra-tibco/tp-helm-charts/releases/download/tibco-developer-hub-1.10.12/tibco-developer-hub-1.10.12.tgz
+    version: 1.10.12
   - apiVersion: v2
     appVersion: 1.10.0
     created: "2025-08-22T05:47:24.549220776Z"
@@ -10877,4 +11009,4 @@ entries:
     urls:
     - https://github.com/TIBCOSoftware/tp-helm-charts/releases/download/tp-dp-monitor-agent-1.3.136/tp-dp-monitor-agent-1.3.136.tgz
     version: 1.3.136
-generated: "2025-09-01T08:10:15.57746691Z"
+generated: "2025-09-04T03:00:48.230164507Z"
