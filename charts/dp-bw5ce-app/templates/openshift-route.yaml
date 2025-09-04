@@ -12,7 +12,9 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    haproxy.router.openshift.io/rewrite-target: /
+    haproxy-ingress.github.io/headers: |
+        X-Forwarded-Prefix: {{ $path.path }}
+    haproxy-ingress.github.io/rewrite-target: /
     {{- if $path.serviceDiscoverable }}
     platform.tibco.com/service-description: {{ $path.serviceDescription | squote }}
     {{- end }}
@@ -24,27 +26,21 @@ metadata:
     platform.tibco.com/service-discoverable: {{ $path.serviceDiscoverable | quote }}
   name: {{ include "dp-bw5ce-app.fullname" $dot }}-{{ $path.port }}
 spec:
-  host: {{ $rule.host | quote }}
-  httpHeaders:
-    actions:
-      request:
-      - action:
-          set:
-            value: {{ $path.path }}
-          type: Set
-        name: X-Forwarded-Prefix
-      response: null
-  path: {{ $path.path }}
-  port:
-    targetPort: port-{{ $path.port }}
+  ingressClassName: haproxy
+  rules:
+  - host: {{ $rule.host | quote }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: {{ include "dp-bwce-app.fullname" $dot }}
+            port:
+              number: {{ $path.port }}
+        pathType: Prefix
+        path: {{ $path.path }}
   tls:
-    termination: edge
-  to:
-    kind: Service
-    name: {{ include "dp-bw5ce-app.fullname" $dot }}
-    weight: 100
-  wildcardPolicy: None
-        
+  - hosts:
+    - {{ $rule.host | quote }}        
 {{- end }}
 {{- end }}
 {{- end }}

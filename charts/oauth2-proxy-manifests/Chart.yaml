@@ -5,7 +5,7 @@
 name: oauth2-proxy
 # Original oauth2-proxy chart version: 1.9.0
 # Original oauth2-proxy version: 10.2.15
-version: 10.2.18
+version: 10.2.19
 apiVersion: v2
 appVersion: 1.10.0
 
