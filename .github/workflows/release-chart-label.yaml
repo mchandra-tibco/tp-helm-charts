@@ -1,7 +1,7 @@
 name: Release Helm Charts by PR Label
 
 on:
-  pull_request:
+  workflow_dispatch:
     types:
       - labeled
     paths:
