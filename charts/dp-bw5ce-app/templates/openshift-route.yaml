@@ -33,7 +33,7 @@ spec:
       paths:
       - backend:
           service:
-            name: {{ include "dp-bwce-app.fullname" $dot }}
+            name: {{ include "dp-bw5ce-app.fullname" $dot }}
             port:
               number: {{ $path.port }}
         pathType: Prefix
