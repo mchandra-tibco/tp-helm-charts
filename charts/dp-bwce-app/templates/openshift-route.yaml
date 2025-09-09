@@ -40,7 +40,7 @@ spec:
         path: {{ $path.path }}
   tls:
   - hosts:
-    - {{ $rule.host | quote }}        
+    - {{ $rule.host | quote }}
 {{- end }}
 {{- end }}
 {{- end }}

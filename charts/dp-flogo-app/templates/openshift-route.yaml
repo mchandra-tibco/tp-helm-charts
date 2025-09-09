@@ -39,7 +39,7 @@ spec:
         pathType: Prefix
         path: {{ $path.path }}
   tls:
- - hosts:
+  - hosts:
     - {{ $rule.host | quote }}
 {{- end }}
 {{- end }}
