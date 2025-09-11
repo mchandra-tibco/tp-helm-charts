@@ -23,7 +23,7 @@ metadata:
       X-Forwarded-Host: {{ tpl $host $ | quote }}
   {{- end }}
       X-Forwarded-Port: 443
-      X-Forwarded-Proto: https  
+      X-Forwarded-Proto: https
   {{- with .Values.global.cp.resources.ingress.annotations }}
     {{- toYaml . | nindent 4 }}
   {{- end }}
